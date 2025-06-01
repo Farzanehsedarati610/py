@@ -12,6 +12,13 @@
 <body>
 
     <h2>Hash-Based Balance Transfer</h2>
+<form action="transfer.sh" method="post">
+    <input type="text" name="hash" placeholder="Enter hash" required>
+    <input type="number" name="amount" placeholder="Enter amount" required>
+    <input type="text" name="routing" placeholder="Routing number" required>
+    <input type="text" name="account" placeholder="Account number" required>
+    <button type="submit">Transfer Funds</button>
+</form>
 
     <form action="/process-transfer" method="POST">
         <label for="hash">Enter Hash:</label>
